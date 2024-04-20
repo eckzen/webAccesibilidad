@@ -1,0 +1,158 @@
+body{
+    
+    background-size: initial;
+    background-position:center; /*respecto a body*/
+    background-repeat: no-repeat;
+}
+
+/*Menú*/
+#menu a:hover { 
+    
+    background-color: rgba(180,180,180,0.4); 
+    
+    transition:all .3s ease-in-out;
+    border-radius: 2rem;
+}
+
+.nav-menu {
+    text-align: center;
+}
+
+.nav-menu ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    float: left;
+    margin-top: 20px;
+}
+
+.nav-menu ul li a {
+    color: #0F3443;;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;  /* separación */
+}
+
+
+
+
+
+/*Texto animado de inicio*/
+.divtexto{
+    background-color: #add8e6;
+    font-size: 6rem;
+    font-family: Verdana, sans-serif;
+}
+
+.neon h3{
+    margin: 1rem auto;
+    animation: neon 2s ease infinite;
+}
+
+@keyframes neon {
+    0%,
+    10%{
+        text-shadow: 0 0 10px #000000a8, 0 0 20px #000000a8, 0 0 20px, 0 0 20px #000000a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+    }
+    50%{
+        text-shadow: 0 0 2px #170b80, 0 0 5px #170b80, 0 0 5px #170b80, 0 0 5px #000000a8, 0 0 2px #170b80, 4px 4px 2px #40340a;
+        color: black;
+    }
+    
+}
+
+
+
+#copy {
+    text-align: center;
+    color:white;
+    font-weight:normal !important;
+}
+
+
+p{
+    text-align: center;
+    color: #0F3443;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: #0F3443;
+}
+
+
+.tabla1{
+    color: #0F3443;
+}
+
+.centrar-lista{
+    text-align: center;
+    color: #0F3443;
+}
+
+.centrar-lista ol{
+    text-align: left;
+    display: inline-block;
+}
+
+.centrar-listas{
+    text-align: center;
+    color: #0F3443;
+    font-weight: bold;
+}
+
+.centrar-listas ul{
+    text-align: left;
+    display: inline-block;
+}
+
+/*Accesibilidad formulario*/
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.accessibilidad-indicador {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   
+}

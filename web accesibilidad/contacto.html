@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Versión 2. Eliminado img de fondo y ajustado footer y divs. Añadidos efectos CSS.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erick Montoya">
+    <title>Inicio</title>
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+</style> 
+
+</head>
+
+<body style="background-color: #add8e6;" text="#FFFFFF" ><!--background="fondo1.png"-->
+
+    <header>
+        <nav class="nav-menu">
+            <ul id="menu">
+                <li><a href="index.html" ><abbr title="Este es el botón de inicio">Inicio</abbr></a></li>
+                <li><a href="contacto.html" ><abbr title="Este es el botón de Contacto">Contacto</a></abbr></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="aumentarFuenteTexto">Aumentar Tamaño de Texto</button>
+
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post" role="form">
+            <div>
+                <label for="name" >Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe aquí tu nombre" required aria-label="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Escribe aquí tu eMail. Por ejemplo: mimail@mail.com" required aria-label="Ingrese su correo electrónico">
+            </div>
+            <div>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe aquí tu mensaje de contacto" required aria-label="Escriba su mensaje aquí"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar Mensaje</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="accessibilidad-indicador">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-.5-4a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5zm1.223-4.057a.747.747 0 0 1 .643.746c0 .398-.31.727-.702.747a5.21 5.21 0 0 1-1.143.024.748.748 0 0 1 .2-1.486c.13 0 .257.04.36.116a3.71 3.71 0 0 0 .824-.001z"/>
+        </svg>
+        <span style="margin-left: 5px;">Accesibilidad para personas con discapacidad cognitivo-visual</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
